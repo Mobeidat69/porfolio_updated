@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+section ,footer{
+    
+    overflow-x: hidden;
+}
+/* header and NavigationBar  */
+.header{
+    background-color: #353535;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+    margin: auto 0;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: #6d1f1f;
+    text-align: center;
+    line-height: 300%;
+    position: relative;
+    color: #ffffff;
+    font-size: 3.5vh;
+    transition: 1s;
+}
+
+.logo::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: #6d1f1f #6d1f1f #6d1f1f transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+    transition-duration: 2s;
+
+}
+.logo:hover::after{
+    transform: rotate(1turn);
+    border-color: #ffffff #ffffff #ffffff transparent;
+}
+.logo:hover{
+    color: #6d1f1f;
+    background-color: #ffffff;
+}
+.NavigationBar ul{
+    margin-top: 2%;
+    display: flex;
+    list-style: none;
+}
+.NavigationBar ul li{
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 130%;
+}
+.NavigationBar a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.NavigationBar a:hover{
+    color: rgb(208, 29, 29);
+}
+.NavigationBar .btn{
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+.navi{
+    display: none;
+    background-color: #7f1c1c;
+    
+}
+.navi a{
+    text-decoration: none;
+    color: white;
+}
+
+/* home page */
+#home{
+    background-color: #6d1f1f;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* overflow-y: hidden; */
+}
+#home .MM{
+    color: white;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.MM h3{
+    text-transform: capitalize;
+}
+.MM h1{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+#home .MM p{
+    font-size: 140%;
+}
+.MM a{
+    text-decoration: none;
+    font-size: 130%;
+    color: rgb(255, 255, 255);
+}
+
+.MM a:hover{
+    color: #191717;
+}
+.MM_img{
+    background-image: url(./ProfilePicture.jpg);
+    width: 30vw;
+    height: 70vh;
+    margin-right: 10%;
+    margin-top: 5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+.MM_img:hover{
+    box-shadow: 1px 2px rgb(0, 0, 0) , -1px -2px #000000;
+}
+.MM_img img{
+    width: 80%;
+    height: 80%;
+    
+}
+.butn{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+/* education */
+#education{
+    text-align: center;
+    margin-top: 3%;
+}
+#education .university{
+    margin-top: 3%;
+}
+#education h2{
+    font-weight: bold;
+}
+.edu_line{
+    width: 50%;
+    margin: 0 auto;
+    border-top: 3px solid ;
+}
+#education .university{
+    display: flex;
+    justify-content: center;
+
+}
+.orange{
+    margin-right: 5%;
+}
+#education .university .orange_photo{
+    background-image: url("Coding-Academy-Logo.jpg");
+    background-size: cover;
+    width: 40vw;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#education .university .aut_photo{
+    background-image: url("images.jpeg");
+    background-size: cover;
+    width: 40vw;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+#education .university .student{
+    background-color: #4f0c0c;
+    color: white;
+    border: 1px solid #4f0c0c;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* skills */
+#skills{
+    margin-top: 5%;
+    background-color: #4f0c0c;
+    text-align: center;
+    color: white;
+    width: 98.9;
+    /* height: 350px; */
+    overflow: hidden;
+}
+#skills h2{
+    padding: 2%;
+    margin-bottom: 5%;
+    font-size: 200%;
+    font-weight: bold;
+}
+#skills .pro{
+    display: flex;
+    justify-content: center;
+}
+#skills div{
+    height: 20vh;
+    text-align: center;
+}
+.pro i{
+    font-size: 500%;
+    padding-right: 5%;
+    padding-left: 3%;
+    color: rgb(255, 255, 255);
+    
+}
+
+/* projects */
+#projects h2{
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+.all_projects{
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+}
+.all_projects span{
+    color: #4f0c0c;
+    font-size: 120%;
+}
+.image{
+    border: 1px solid #0C134F;
+    border-radius: 1%;
+    margin-bottom: 20%;
+    position: relative;
+}
+
+.image:hover::after{
+    border-color: rgb(0, 0, 0)  transparent transparent transparent;
+}
+.dms_intro , .project1_intro , .project2_intro{
+    width: 15rem;
+    color: #000000;
+    font-size: 100%;
+}
+.par{
+    text-align: center;
+    margin-left: 10%;
+}
+.dms_par{
+    padding-left: 7%;
+}
+
+/* experiences */
+#experiences {
+    margin-top: 5%;
+    text-align: center;
+}
+#experiences h2{
+    margin-bottom: 5%;
+    font-size: 200%;
+    font-weight: bold;
+}
+#experiences > div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+#experiences div div{
+    border: 1px solid #620f0f;
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 150%;
+    color: #be1a1a;
+    padding: 3%;
+    width: 50%;
+}
+.career span{
+    color: #bd3737;
+}
+
+.footer{
+    background-color: #4f0c0c;
+    color: white;
+    text-align: center;
+    /* height: 40vh; */
+}
+.footer div{
+    /* margin-bottom: 1%; */
+    padding: 1%;
+}
+.footer div span{
+    font-size: 170%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.footer a{
+    text-decoration: none;
+    padding: 2%;
+}
+.footer i{
+    font-size: 200%;
+}
+/* responsive */
+@media (min-width: 280px) and (max-width: 1000px){
+    
+    .NavigationBar li{
+        display: none;
+    }
+    .navi{
+        display: flex;
+    }
+    #projects .all_projects{
+        flex-wrap: wrap;
+    }
+    .pro{
+        width: 100%;
+    }
+    .pro i{
+        font-size: 300%;
+    }
+    header{
+        width: 100%;
+    }
+    .university{
+        flex-wrap: wrap;
+    }
+    .orange , .aut{
+        width: 100% ;
+    }
+    .aut_photo{
+        width: 96% !important;
+    }
+    .orange_photo {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        padding: 10%;
+        width: 99% !important
+    }
+    .student{
+        width: 100%;
+    }
+    .aut_student{
+        width: 97%;
+    }
+    #experiences .career{
+        flex-wrap: wrap;
+    }
+    #home{
+        flex-wrap: wrap;
+    }
+    .personal_img{
+        width: 70%;
+        height: 44vh;
+        background-size: cover;
+        margin-left: 20%;
+    }
+    .orange , .aut{
+        margin-left: 4.5%;
+    }
+    .career div{
+        width: 100% !important;
+       
+    }
+}

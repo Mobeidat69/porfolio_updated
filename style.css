@@ -239,8 +239,10 @@ section ,footer{
 }
 .all_projects{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 98vw;
+    
+
 }
 .all_projects span{
     color: #4f0c0c;
@@ -253,17 +255,21 @@ section ,footer{
     position: relative;
 }
 
-.image:hover::after{
+/* .image:hover::after{
     border-color: rgb(0, 0, 0)  transparent transparent transparent;
-}
+} */
 .dms_intro , .project1_intro , .project2_intro{
     width: 15rem;
     color: #000000;
     font-size: 100%;
+    
+}
+.project2_intro{
+    text-align: left;
 }
 .par{
     text-align: center;
-    margin-left: 10%;
+   margin-left: 10%;
 }
 .dms_par{
     padding-left: 7%;
@@ -320,6 +326,12 @@ section ,footer{
 .footer i{
     font-size: 200%;
 }
+/* .project_2 .image {
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+  } */
+  
 /* responsive */
 @media (min-width: 280px) and (max-width: 1000px){
     
